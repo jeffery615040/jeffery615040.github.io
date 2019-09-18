@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .boxA{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;    
+        }
+        
+    </style>
+<body>
+    
+    <div class="boxA"></div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"> </script>
+    <script src="/CustomEase.min.js"> </script>
+
+    <script>
+        var TimelineLite = new TimelineLite();
+
+      
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(calc(100vw - 100px),0) rotate(90deg)'}));
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(calc(100vw - 100px),calc(100vh - 100px))'}));
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(0,calc(100vh - 100px))'}));
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(0,100px)'}));
+
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(calc(100vw - 200px),100px)'}));
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(calc(100vw - 200px),calc(100vh - 200px))'}));
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(100px,calc(100vh - 200px))'}));
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(100px,200px)'}));
+
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(calc(100vw - 300px),200px)'}));
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(calc(100vw - 300px),calc(100vh - 300px))'}));
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(200px,calc(100vh - 300px))'}));
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(200px,calc(50vh - 50px))'}));
+
+        TimelineLite.add(TweenMax.to(".boxA", 3, {transform:'translate(calc(50vw - 50px),calc(50vh - 50px))'}));
+        
+    </script>
+</body>
+</html>
