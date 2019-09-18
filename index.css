@@ -9,7 +9,7 @@ body{
 }
 .fixed-top {
     position: fixed;
-    top: calc(50vh - 50%);
+    top: calc(50vh - 306px);
     right: unset;
     left: 0;
     z-index: 1030;
