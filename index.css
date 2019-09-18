@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 3000px;
+    background-color: black;
+}
+.fixed-top {
+    position: fixed;
+    top: 10vh;
+    right: unset;
+    left: 0;
+    z-index: 1030;
+}
+.bg-blue {
+    background-color: rgba(221, 235, 245, 0.6);
+}
+.navbar {
+    display: block;
+}
+.navbar .navbar-nav {
+    display: block;
+}
