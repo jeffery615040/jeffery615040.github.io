@@ -7,41 +7,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+    <link rel="stylesheet" href="index.css">
 
 <body>
-
-    <nav>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
-            <a class="navbar-brand" href="#"><img src="/img/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto text-justify">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">顛覆故事</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">顛覆消息</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">顛覆產品</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">聯絡顛覆</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">推薦顛覆</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue  fixed-top ">
+        <img src="/img/logo.png" alt="logo-img">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">顛覆故事</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">顛覆消息</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">顛覆產品</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">聯絡顛覆</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">推薦顛覆</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <section></section>
-    <section></section>
+    <section id="banner">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(/img/20190916_190916_0010.jpg)"></div>
+                <div class="swiper-slide" style="background-image: url(/img/gg.png)"></div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section id="story">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 text">
+                    <p>其實想要開這間深夜咖啡的原因很單純。</p>
+                    <p>因為自己本身愛喝咖啡煮咖啡，偏偏餐飲業下班時咖啡廳都休息了，索性就自己來開一間深夜咖啡廳囉！</p>
+                    <p>加上有不少的餐飲經驗，所以對食材部分非常要求。</p>
+
+                    地點部分因為不喜歡市區的匆促吵雜，所以選擇隱身在較寧靜的大樓住宅區。
+                </div>
+                <div class="col-6 px-0">
+                    <img src="/img/story.png" class="w-100" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <section></section>
     <section></section>
     <section></section>
@@ -56,6 +79,18 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+
 </body>
 
 </html>
