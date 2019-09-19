@@ -9,22 +9,28 @@ body{
 }
 
 .bg-blue{
-    background-color: rgba(221, 235, 245, 0.6);
-}
-img{
-    width: 6vw;
-}
-.navbar-nav {
-    display: inline-block;
-    margin: 10px auto;
+    background-color: rgba(221, 235, 245, 1);
 }
 .navbar{
     display: inline-block;
 }
-.fixed-top{
+.fixed-top{ 
     top: 25vh;
     right: unset;
+
+    img{
+        width: 6vw;
+    }
+
+    .navbar-nav {
+        display: inline-block;
+        margin: 10px auto;
+    }
+    .nav-link{
+        font-size: 15pt;
+    }     
 }
+
 
 #banner{
     .swiper-container {
@@ -52,19 +58,34 @@ img{
 }
 
 #message{
-    
-
+        margin-top: 135px;
+        font-size: 20pt;
+        .line{
+            padding: 0;
+        }
+        .text-center{
+            line-height: 88px;
+        }
         .announcement{
             background-color: rgb(221 , 235 , 245);
             height: 500px;
             .vacation{
-                height: 20%;
+                height: 15%;
             }
             .calendar{
-                height: 80%;
+                height: 85%;
                 align-items: center;
                 justify-content: center;
             }
+        .d-flex{
+            flex-direction: column;
+            justify-content: space-around;
+
+            img{
+                width: 70px;
+                height: 60px;
+            }
+            
         }
-    
+        }
 }

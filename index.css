@@ -11,16 +11,7 @@ body {
 }
 
 .bg-blue {
-  background-color: rgba(221, 235, 245, 0.6);
-}
-
-img {
-  width: 6vw;
-}
-
-.navbar-nav {
-  display: inline-block;
-  margin: 10px auto;
+  background-color: #ddebf5;
 }
 
 .navbar {
@@ -30,6 +21,19 @@ img {
 .fixed-top {
   top: 25vh;
   right: unset;
+}
+
+.fixed-top img {
+  width: 6vw;
+}
+
+.fixed-top .navbar-nav {
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.fixed-top .nav-link {
+  font-size: 15pt;
 }
 
 #banner .swiper-container {
@@ -55,22 +59,49 @@ img {
           justify-content: flex-start;
 }
 
+#message {
+  margin-top: 135px;
+  font-size: 20pt;
+}
+
+#message .line {
+  padding: 0;
+}
+
+#message .text-center {
+  line-height: 88px;
+}
+
 #message .announcement {
   background-color: #ddebf5;
   height: 500px;
 }
 
 #message .announcement .vacation {
-  height: 20%;
+  height: 15%;
 }
 
 #message .announcement .calendar {
-  height: 80%;
+  height: 85%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#message .announcement .d-flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#message .announcement .d-flex img {
+  width: 70px;
+  height: 60px;
 }
 /*# sourceMappingURL=index.css.map */
