@@ -4,6 +4,7 @@
 body{
     margin: 0;
     padding: 0;
+    height: 3000px;
     position: relative;
 }
 
@@ -103,13 +104,22 @@ body{
 }
 #product{
     margin-top: 135px;
-    .text-center{
-        line-height: 88px;
-        font-size: 20pt;
-    }
-    .h50vh{
-        height: 50vh;
+    .container-fluid{
+        .text-center{
+            line-height: 88px;
+            font-size: 20pt;
+        }
+            .eat{
+                background-image: url("./img/menu-1920-cake.png");
+                background-size: cover;
+                background-position: center;
+                height: 50vh;
+            }
+            .drink{
+                background-image: url("./img/menu-1920-drink.png");
+                background-size: cover;
+                background-position: center;
+            }
     }
 }
 
-//123

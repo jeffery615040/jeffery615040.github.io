@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 3000px;
   position: relative;
 }
 
@@ -126,12 +127,21 @@ body {
   margin-top: 135px;
 }
 
-#product .text-center {
+#product .container-fluid .text-center {
   line-height: 88px;
   font-size: 20pt;
 }
 
-#product .h50vh {
+#product .container-fluid .eat {
+  background-image: url("./img/menu-1920-cake.png");
+  background-size: cover;
+  background-position: center;
   height: 50vh;
+}
+
+#product .container-fluid .drink {
+  background-image: url("./img/menu-1920-drink.png");
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=index.css.map */
