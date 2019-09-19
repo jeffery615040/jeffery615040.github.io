@@ -133,15 +133,24 @@ body {
 }
 
 #product .container-fluid .eat {
-  background-image: url("./img/menu-1920-cake.png");
+  background-image: url("./img/menu-1920-cake-07.png");
   background-size: cover;
   background-position: center;
   height: 50vh;
 }
 
 #product .container-fluid .drink {
-  background-image: url("./img/menu-1920-drink.png");
+  background-image: url("./img/menu-1920-drink-07.png");
   background-size: cover;
   background-position: center;
+}
+
+#connection {
+  margin-top: 135px;
+}
+
+#connection .container .text-center {
+  line-height: 88px;
+  font-size: 20pt;
 }
 /*# sourceMappingURL=index.css.map */

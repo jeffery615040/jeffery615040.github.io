@@ -70,8 +70,6 @@ body{
             }
             .announcement{
                 background-color: rgb(221 , 235 , 245);
-                
-                
                 .calendar{
                     margin-top: 5%;
                     height: 90%;
@@ -110,16 +108,24 @@ body{
             font-size: 20pt;
         }
             .eat{
-                background-image: url("./img/menu-1920-cake.png");
+                background-image: url("./img/menu-1920-cake-07.png");
                 background-size: cover;
                 background-position: center;
                 height: 50vh;
             }
             .drink{
-                background-image: url("./img/menu-1920-drink.png");
+                background-image: url("./img/menu-1920-drink-07.png");
                 background-size: cover;
                 background-position: center;
             }
     }
 }
-
+#connection{
+    margin-top: 135px;
+    .container{
+        .text-center{
+            line-height: 88px;
+            font-size: 20pt;
+        }
+    }
+}
