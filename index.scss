@@ -31,7 +31,6 @@ body{
     }     
 }
 
-
 #banner{
     .swiper-container {
         width: 100%;
@@ -62,6 +61,9 @@ body{
         font-size: 20pt;
         .container{
             position: relative;
+            .mb85{
+                margin-bottom: 85px;
+            }
             .line{
                 padding: 0;
             }
@@ -103,6 +105,9 @@ body{
 #product{
     margin-top: 135px;
     .container-fluid{
+        .mb85{
+            margin-bottom: 85px;
+        }
         .text-center{
             line-height: 88px;
             font-size: 20pt;
@@ -120,12 +125,71 @@ body{
             }
     }
 }
+
 #connection{
     margin-top: 135px;
+    .container{
+        .mb85{
+            margin-bottom: 85px;
+        }
+        .text-center{
+            line-height: 88px;
+            font-size: 20pt;
+        }
+        .icon{
+            font-size: 15pt;
+            .icon-top{
+                padding:0 0 20px 0;
+
+                .ig, .fb, .map{
+                    width: 300px;
+                    background-color: rgb(243, 247, 250); 
+                    line-height: 50px;
+                    padding: 20px 0;
+                }
+            }
+            img{
+                width: 50px;
+                height: 50px;;
+            }
+        }
+        .link-img{
+            img{
+                height: 50vh;
+                width: 300px;
+            }
+        }
+    }  
+}
+
+#recommend{
+    margin-top: 135px;
+    .mb85{
+        margin-bottom: 85px;
+    }
     .container{
         .text-center{
             line-height: 88px;
             font-size: 20pt;
         }
+    }
+    .link-img{
+        img{
+            width: 300px;
+            height: 50vh;
+        }
+    }
+}
+
+footer{
+    background-color: rgb(243, 247, 250);
+    font-size: 18pt;
+    padding: 50px 0;
+    img{
+        width: 50px;
+        height: 50px;;
+    }
+    .text{
+        line-height: 50px;   
     }
 }

@@ -68,6 +68,10 @@ body {
   position: relative;
 }
 
+#message .container .mb85 {
+  margin-bottom: 85px;
+}
+
 #message .container .line {
   padding: 0;
 }
@@ -127,6 +131,10 @@ body {
   margin-top: 135px;
 }
 
+#product .container-fluid .mb85 {
+  margin-bottom: 85px;
+}
+
 #product .container-fluid .text-center {
   line-height: 88px;
   font-size: 20pt;
@@ -149,8 +157,70 @@ body {
   margin-top: 135px;
 }
 
+#connection .container .mb85 {
+  margin-bottom: 85px;
+}
+
 #connection .container .text-center {
   line-height: 88px;
   font-size: 20pt;
+}
+
+#connection .container .icon {
+  font-size: 15pt;
+}
+
+#connection .container .icon .icon-top {
+  padding: 0 0 20px 0;
+}
+
+#connection .container .icon .icon-top .ig, #connection .container .icon .icon-top .fb, #connection .container .icon .icon-top .map {
+  width: 300px;
+  background-color: #f3f7fa;
+  line-height: 50px;
+  padding: 20px 0;
+}
+
+#connection .container .icon img {
+  width: 50px;
+  height: 50px;
+}
+
+#connection .container .link-img img {
+  height: 50vh;
+  width: 300px;
+}
+
+#recommend {
+  margin-top: 135px;
+}
+
+#recommend .mb85 {
+  margin-bottom: 85px;
+}
+
+#recommend .container .text-center {
+  line-height: 88px;
+  font-size: 20pt;
+}
+
+#recommend .link-img img {
+  width: 300px;
+  height: 50vh;
+}
+
+footer {
+  background-color: #f3f7fa;
+  font-size: 18pt;
+  padding: 50px 0;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+footer .text {
+  line-height: 50px;
 }
 /*# sourceMappingURL=index.css.map */
