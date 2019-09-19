@@ -34,7 +34,7 @@ img {
 
 #banner .swiper-container {
   width: 100%;
-  height: 850px;
+  height: 70vh;
 }
 
 #banner .swiper-container .swiper-slide {
@@ -61,11 +61,11 @@ img {
 }
 
 #message .announcement .vacation {
-  height: 10%;
+  height: 20%;
 }
 
 #message .announcement .calendar {
-  height: 90%;
+  height: 80%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
