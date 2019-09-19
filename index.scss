@@ -50,3 +50,21 @@ img{
         }
     }
 }
+
+#message{
+    
+
+        .announcement{
+            background-color: rgb(221 , 235 , 245);
+            height: 500px;
+            .vacation{
+                height: 10%;
+            }
+            .calendar{
+                height: 90%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    
+}
