@@ -41,9 +41,12 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(/img/20190916_190916_0010.jpg)"></div>
-                <div class="swiper-slide" style="background-image: url(/img/gg.png)"></div>
-
+                <div class="swiper-slide" style="background-image: url(/img/banner-1920-1.png)"></div>
+                <div class="swiper-slide" style="background-image: url(/img/banner-1920-2.png)"></div>
+                <div class="swiper-slide" style="background-image: url(/img/banner-1920-3.png)"></div>
+                <div class="swiper-slide" style="background-image: url(/img/banner-1920-4.png)"></div>
+                <div class="swiper-slide" style="background-image: url(/img/banner-1920-5.png)"></div>
+                <div class="swiper-slide" style="background-image: url(/img/banner-1920-6.png)"></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -60,7 +63,7 @@
                     地點部分因為不喜歡市區的匆促吵雜，所以選擇隱身在較寧靜的大樓住宅區。
                 </div>
                 <div class="col-6 px-0">
-                    <img src="/img/story.png" class="w-100 h-100" alt="">
+                    <img src="/img/story-1920.png" class="w-100 h-100" alt="">
                 </div>
             </div>
         </div>
@@ -68,38 +71,38 @@
     <section id="message">
         <div class="container">
             <div class="row">
-                <div class="col line"><img src="/img/black-line.png" alt=""></div>
+                <div class="col line"><img src="/img/black-line-1920.png" alt=""></div>
                 <div class="col text-center">顛覆消息</div>
-                <div class="col line"><img src="/img/black-line.png" alt=""></div>
+                <div class="col line"><img src="/img/black-line-1920.png" alt=""></div>
             </div>
             <div class="row announcement">
-                <div class="col-5">
-                    <div class="row vacation">
-                        <img src="/img/4.png" alt="" class="mx-auto h-100"></div>
+                <div class="col">
                     <div class="row calendar">
                         <iframe
                             src="https://calendar.google.com/calendar/embed?src=zh.taiwan%23holiday%40group.v.calendar.google.com&ctz=Asia%2FTaipei"
                             style="border: 0" width="75%" height="100%" frameborder="0" scrolling="no"></iframe>
                     </div>
                 </div>
-                <div class="col-7 d-flex">
+                <div class="col d-flex">
                     <div class="row"></div>
                     <div class="row">
                         <div>
-                            <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="" class=""></div>
+                            <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="" class="aircraft"></div>
                         <div class="text">本店禁止吸菸</div>
-                        <div></div>
+                        <div>
+                            <img src="/img/smoke-v2 icon.png" alt="" class="smoke-img">
+                        </div>
                     </div>
                     <div class="row"></div>
                     <div class="row">
                         <div>
-                            <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="" class=""></div>
+                            <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="" class="aircraft"></div>
                         <div class="text">本店低消—飲品一杯/人</div>
                     </div>
                     <div class="row"></div>
                     <div class="row">
                         <div>
-                            <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="" class=""></div>
+                            <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="" class="aircraft"></div>
                         <div class="text">中秋烤肉會—1599/人</div>
                     </div>
                     <div class="row"></div>
@@ -107,8 +110,24 @@
             </div>
         </div>
     </section>
+    <section id="product">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col line"><img src="/img/black-line-1920.png" alt=""></div>
+                <div class="col text-center">顛覆產品</div>
+                <div class="col line"><img src="/img/black-line-1920.png" alt=""></div>
+            </div>
+            <div class="row h50vh">
+                <div class="col px-0 d-inline-block h50vh">
+                    <img src="/img/menu-1920-cake.png" alt="" class="w-100 h-100">
+                </div>
+                <div class="col px-0 d-inline-block h50vh">
+                    <img src="/img/menu-1920-drink.png" alt="" class="w-100 h-100">
+                </div>
+            </div>
 
-    <section></section>
+        </div>
+    </section>
     <section></section>
     <footer></footer>
 
@@ -125,9 +144,11 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 dynamicBullets: true,
+
             },
         });
     </script>

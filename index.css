@@ -6,7 +6,6 @@
 body {
   margin: 0;
   padding: 0;
-  height: 3000px;
   position: relative;
 }
 
@@ -53,7 +52,7 @@ body {
 #story .row .text {
   background-color: #a1b6c2;
   padding: 5vw 6vw;
-  font-size: 20pt;
+  font-size: 15pt;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -64,25 +63,25 @@ body {
   font-size: 20pt;
 }
 
-#message .line {
+#message .container {
+  position: relative;
+}
+
+#message .container .line {
   padding: 0;
 }
 
-#message .text-center {
+#message .container .text-center {
   line-height: 88px;
 }
 
-#message .announcement {
+#message .container .announcement {
   background-color: #ddebf5;
-  height: 500px;
 }
 
-#message .announcement .vacation {
-  height: 15%;
-}
-
-#message .announcement .calendar {
-  height: 85%;
+#message .container .announcement .calendar {
+  margin-top: 5%;
+  height: 90%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -91,17 +90,48 @@ body {
           justify-content: center;
 }
 
-#message .announcement .d-flex {
+#message .container .announcement .d-flex {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#message .announcement .d-flex img {
+#message .container .announcement .d-flex img {
   width: 70px;
   height: 60px;
+}
+
+#message .container .announcement .d-flex .aircraft {
+  position: absolute;
+  left: -45px;
+}
+
+#message .container .announcement .d-flex .smoke-img {
+  margin-left: 10px;
+}
+
+#message .container .announcement .d-flex .row {
+  margin: 20px 0 20px 30px;
+}
+
+#message .container .announcement .d-flex .text {
+  line-height: 60px;
+}
+
+#product {
+  margin-top: 135px;
+}
+
+#product .text-center {
+  line-height: 88px;
+  font-size: 20pt;
+}
+
+#product .h50vh {
+  height: 50vh;
 }
 /*# sourceMappingURL=index.css.map */
