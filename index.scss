@@ -17,11 +17,20 @@ body{
 .fixed-top{ 
     top: 25vh;
     right: unset;
-
-    img{
-        width: 6vw;
+    .logo{
+        .logo-img{
+            width: 6vw;
+        min-width: 80px;
+        }
     }
-
+    
+    .navbar-toggler{
+        .navbar-toggler-icon {
+            background-image: url("/img/logo.png");
+            width: 6vw;
+            height: 16vw;
+        }
+    }
     .navbar-nav {
         display: inline-block;
         margin: 10px auto;
@@ -35,17 +44,14 @@ body{
     .swiper-container {
         width: 100%;
         height: 70vh;
-
         .swiper-slide{
             background-repeat: no-repeat;
-            background-size: cover;
         }
     }
 }
  
 #story{
     margin-top: 135px;
-
     .row{
         .text{
             background-color: rgb(161 , 182, 194);
@@ -102,6 +108,7 @@ body{
             }
         }
 }
+
 #product{
     margin-top: 135px;
     .container-fluid{
@@ -140,7 +147,6 @@ body{
             font-size: 15pt;
             .icon-top{
                 padding:0 0 20px 0;
-
                 .ig, .fb, .map{
                     width: 300px;
                     background-color: rgb(243, 247, 250); 
@@ -161,7 +167,6 @@ body{
         }
     }  
 }
-
 #recommend{
     margin-top: 135px;
     .mb85{
@@ -194,6 +199,27 @@ footer{
     }
 }
 
+@media (max-width: 768px){
+    .fixed-top{
+        .logo-img{
+            display: none;
+        }
+        .nav-link{
+            font-size: 13pt;
+        }
+    }
+
+    #banner{
+        .swiper-container{
+            width: 100%;
+            height: 50vh;
+        }
+        
+    }
 
 
-////////////123
+
+
+
+
+}

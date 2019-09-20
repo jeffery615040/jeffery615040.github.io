@@ -23,8 +23,15 @@ body {
   right: unset;
 }
 
-.fixed-top img {
+.fixed-top .logo .logo-img {
   width: 6vw;
+  min-width: 80px;
+}
+
+.fixed-top .navbar-toggler .navbar-toggler-icon {
+  background-image: url("/img/logo.png");
+  width: 6vw;
+  height: 16vw;
 }
 
 .fixed-top .navbar-nav {
@@ -43,7 +50,6 @@ body {
 
 #banner .swiper-container .swiper-slide {
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #story {
@@ -222,5 +228,18 @@ footer img {
 
 footer .text {
   line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .fixed-top .logo-img {
+    display: none;
+  }
+  .fixed-top .nav-link {
+    font-size: 13pt;
+  }
+  #banner .swiper-container {
+    width: 100%;
+    height: 50vh;
+  }
 }
 /*# sourceMappingURL=index.css.map */
