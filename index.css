@@ -137,23 +137,23 @@ body {
   margin-top: 135px;
 }
 
-#product .container-fluid .mb85 {
+#product .container .mb85 {
   margin-bottom: 85px;
 }
 
-#product .container-fluid .text-center {
+#product .container .text-center {
   line-height: 88px;
   font-size: 20pt;
 }
 
-#product .container-fluid .eat {
+#product .container .eat {
   background-image: url("./img/menu-1920-cake-07.png");
   background-size: cover;
   background-position: center;
   height: 50vh;
 }
 
-#product .container-fluid .drink {
+#product .container .drink {
   background-image: url("./img/menu-1920-drink-07.png");
   background-size: cover;
   background-position: center;
