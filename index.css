@@ -6,12 +6,11 @@
 body {
   margin: 0;
   padding: 0;
-  height: 3000px;
   position: relative;
 }
 
 .bg-blue {
-  background-color: #ddebf5;
+  background-color: rgba(221, 235, 245, 0.6);
 }
 
 .navbar {
@@ -50,6 +49,7 @@ body {
 
 #banner .swiper-container .swiper-slide {
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #story {
@@ -58,11 +58,8 @@ body {
 
 #story .row .text {
   background-color: #a1b6c2;
-  padding: 5vw 6vw;
+  padding: 150px;
   font-size: 15pt;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 #message {
@@ -82,23 +79,14 @@ body {
   padding: 0;
 }
 
-#message .container .text-center {
-  line-height: 88px;
-}
-
 #message .container .announcement {
   background-color: #ddebf5;
 }
 
 #message .container .announcement .calendar {
-  margin-top: 5%;
-  height: 90%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 30px 0 30px 30px;
+  height: 350px;
+  width: 300px;
 }
 
 #message .container .announcement .d-flex {
@@ -118,7 +106,7 @@ body {
 
 #message .container .announcement .d-flex .aircraft {
   position: absolute;
-  left: -45px;
+  left: -35px;
 }
 
 #message .container .announcement .d-flex .smoke-img {
@@ -131,19 +119,16 @@ body {
 
 #message .container .announcement .d-flex .text {
   line-height: 60px;
+  letter-spacing: 20px;
 }
 
 #product {
   margin-top: 135px;
+  font-size: 20pt;
 }
 
 #product .container .mb85 {
   margin-bottom: 85px;
-}
-
-#product .container .text-center {
-  line-height: 88px;
-  font-size: 20pt;
 }
 
 #product .container .eat {
@@ -157,34 +142,30 @@ body {
   background-image: url("./img/menu-1920-drink-07.png");
   background-size: cover;
   background-position: center;
+  height: 50vh;
 }
 
 #connection {
   margin-top: 135px;
+  font-size: 20pt;
 }
 
 #connection .container .mb85 {
   margin-bottom: 85px;
 }
 
-#connection .container .text-center {
-  line-height: 88px;
-  font-size: 20pt;
-}
-
 #connection .container .icon {
   font-size: 15pt;
 }
 
-#connection .container .icon .icon-top {
-  padding: 0 0 20px 0;
-}
-
-#connection .container .icon .icon-top .ig, #connection .container .icon .icon-top .fb, #connection .container .icon .icon-top .map {
+#connection .container .icon .icon-top .phone, #connection .container .icon .icon-top .ig, #connection .container .icon .icon-top .fb, #connection .container .icon .icon-top .clock, #connection .container .icon .icon-top .map {
   width: 300px;
   background-color: #f3f7fa;
   line-height: 50px;
   padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #connection .container .icon img {
@@ -199,15 +180,11 @@ body {
 
 #recommend {
   margin-top: 135px;
+  font-size: 20pt;
 }
 
 #recommend .mb85 {
   margin-bottom: 85px;
-}
-
-#recommend .container .text-center {
-  line-height: 88px;
-  font-size: 20pt;
 }
 
 #recommend .link-img img {
@@ -230,16 +207,91 @@ footer .text {
   line-height: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .fixed-top .logo-img {
     display: none;
   }
   .fixed-top .nav-link {
     font-size: 13pt;
   }
+}
+
+@media (max-width: 576px) {
+  .bg-blue {
+    background-color: rgba(221, 235, 245, 0.8);
+  }
   #banner .swiper-container {
     width: 100%;
     height: 50vh;
+  }
+  #story {
+    margin-top: 0;
+  }
+  #story .row .text {
+    background-color: #a1b6c2;
+    padding: 50px;
+    font-size: 15pt;
+  }
+  #message {
+    margin-top: 0;
+    font-size: 15pt;
+  }
+  #message .container .mb85 {
+    margin-bottom: 10px;
+  }
+  #message .container .announcement {
+    background-color: unset;
+  }
+  #message .container .announcement .calendar {
+    width: 190px;
+    height: 226px;
+    margin: auto;
+  }
+  #message .container .announcement .dnone {
+    display: none;
+  }
+  #product {
+    margin-top: 0;
+    font-size: 15pt;
+  }
+  #product .container .mb85 {
+    margin-bottom: 10px;
+  }
+  #product .container .eat {
+    height: 50vh;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #product .container .drink {
+    height: 50vh;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 10px;
+  }
+  #connection {
+    margin-top: 0;
+    font-size: 15pt;
+  }
+  #connection .container .mb85 {
+    margin-bottom: 10px;
+  }
+  #connection .container .dnone {
+    display: none;
+  }
+  #recommend {
+    margin-top: 0;
+    font-size: 15pt;
+  }
+  #recommend .container .mb85 {
+    margin-bottom: 10px;
+  }
+  #recommend .container .dnone {
+    display: none;
+  }
+  footer {
+    padding: 5px 0;
   }
 }
 /*# sourceMappingURL=index.css.map */
