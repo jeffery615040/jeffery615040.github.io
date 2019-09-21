@@ -1,20 +1,20 @@
-var swiper = new Swiper('.s1', {
+var swiper = new Swiper('.banner', {
     loop: true,
     pagination: {
-        el: '.s1_pag',
+        el: '.banner_pag',
         dynamicBullets: true,
     },
 });
 
 var swiper = new Swiper('.swiper_story', {
     loop: true,
-    
+    speed:1500,
     pagination: {
         dynamicBullets: true,
     },
-    // autoplay: {
-    //     delay: 1000,
-    // },
+    autoplay: {
+        delay: 2000,
+    },
 });
 
 var swiper = new Swiper('.s2', {
@@ -52,5 +52,6 @@ for (let i = 0; i < nav_link.length; i++) {
         nav_link[i].textContent = Chinese[i];  
     } 
 }
+
 
 
