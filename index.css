@@ -217,7 +217,7 @@ body {
 
 #recommend .swiper-container {
   width: 300px;
-  height: 50vh;
+  height: 100%;
 }
 
 footer {
