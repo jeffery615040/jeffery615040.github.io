@@ -1,7 +1,8 @@
 $mt-135:135px;
 $mt-0:0;
 $mb-85:85px;
-$mb-10:10px;
+$mb-0:0px;
+$my-10:10px;
 $f-size20:20pt;
 $f-size15:15pt;
 
@@ -319,7 +320,10 @@ footer{
         font-size: $f-size15;
         .container{
             .mb85{
-                margin-bottom: $mb-10;
+                margin-bottom: $mb-0;
+            }
+            .my10{
+                margin: $my-10 0;
             }
             .announcement{
                 background-color: unset;
@@ -336,7 +340,10 @@ footer{
         font-size: $f-size15;
         .container{
             .mb85{
-                margin-bottom: $mb-10;
+                margin-bottom: $mb-0;
+            }
+            .my10{
+                margin: $my-10 0;
             }
             .eat{
                 height: 33vh;
@@ -356,7 +363,10 @@ footer{
         font-size: $f-size15;
         .container{
             .mb85{
-                margin-bottom: $mb-10;
+                margin-bottom: $mb-0;
+            }
+            .my10{
+                margin: $my-10 0;
             }
             .dnone{
                 display: none;
@@ -368,7 +378,10 @@ footer{
         font-size: $f-size15;
         .container{
             .mb85{
-                margin-bottom: $mb-10;
+                margin-bottom: $mb-0;
+            }
+            .my10{
+                margin: $my-10 0;
             }
             .dnone{
                 display: none;

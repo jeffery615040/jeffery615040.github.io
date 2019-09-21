@@ -335,7 +335,10 @@ footer .text {
     font-size: 15pt;
   }
   #message .container .mb85 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+  }
+  #message .container .my10 {
+    margin: 10px 0;
   }
   #message .container .announcement {
     background-color: unset;
@@ -350,7 +353,10 @@ footer .text {
     font-size: 15pt;
   }
   #product .container .mb85 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+  }
+  #product .container .my10 {
+    margin: 10px 0;
   }
   #product .container .eat {
     height: 33vh;
@@ -372,7 +378,10 @@ footer .text {
     font-size: 15pt;
   }
   #connection .container .mb85 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+  }
+  #connection .container .my10 {
+    margin: 10px 0;
   }
   #connection .container .dnone {
     display: none;
@@ -382,7 +391,10 @@ footer .text {
     font-size: 15pt;
   }
   #recommend .container .mb85 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+  }
+  #recommend .container .my10 {
+    margin: 10px 0;
   }
   #recommend .container .dnone {
     display: none;
