@@ -15,26 +15,27 @@
         <div class="logo d-flex justify-content-center">
             <img src="/img/logo.png" alt="logo-img" class="logo-img mx-auto">
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler d-flex m-auto d-sm-none" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item d-flex justify-content-center">
-                    <a class="nav-link" href="#">顛覆故事</a>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#story">顛覆故事</a>
                 </li>
-                <li class="nav-item d-flex justify-content-center">
-                    <a class="nav-link" href="#">顛覆消息</a>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#message">顛覆消息</a>
                 </li>
-                <li class="nav-item" d-flex justify-content-center>
-                    <a class="nav-link" href="#">顛覆產品</a>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#product">顛覆產品</a>
                 </li>
-                <li class="nav-item d-flex justify-content-center">
-                    <a class="nav-link" href="#">聯絡顛覆</a>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#connection">聯絡顛覆</a>
                 </li>
-                <li class="nav-item d-flex justify-content-center">
-                    <a class="nav-link" href="#">推薦顛覆</a>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#recommend">推薦顛覆</a>
                 </li>
             </ul>
         </div>
@@ -51,12 +52,12 @@
                 <div class="swiper-slide" style="background-image: url(/img/banner-1920-6.png)"></div>
             </div>
             <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination s1_pag"></div>
         </div>
     </section>
 
     <section id="story">
-        <div class="container-fluid">
+        <div class="container-fluid d-none d-sm-block">
             <div class="row">
                 <div class="col-sm-12 col-md-6 text">
                     <p>其實想要開這間深夜咖啡的原因很單純。</p>
@@ -65,20 +66,33 @@
 
                     地點部分因為不喜歡市區的匆促吵雜，所以選擇隱身在較寧靜的大樓住宅區。
                 </div>
-                <div class="col-sm-12 col-md-6 px-0">
-                    <img src="/img/story-1920.png" class="w-100 h-100" alt="">
-                </div>
+                <div class="col-sm-12 col-md-6 px-0 story_img"></div>
             </div>
         </div>
+
+        <div class="swiper-container swiper_story d-flex d-sm-none">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text d-inline-block justify-content-center align-items-center">
+                        <p>其實想要開這間深夜咖啡的原因很單純。</p>
+                        <p>因為自己本身愛喝咖啡煮咖啡，偏偏餐飲業下班時咖啡廳都休息了，索性就自己來開一間深夜咖啡廳囉！</p>
+                        <p>加上有不少的餐飲經驗，所以對食材部分非常要求。</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="swiper-slide"></div>
+            </div>
+        </div>
+
     </section>
 
     <section id="message">
         <div class="container">
-            <div class="row mb85">
+            <div class="row mb85 ">
                 <div class="col-4 line">
                     <img src="/img/black-line-1920.png" alt="" class="w-100">
                 </div>
-                <div class="col-4 text-center w-100 d-flex align-items-center justify-content-center">顛覆消息</div>
+                <div class="col-4 text-center d-flex align-items-center justify-content-center">顛覆消息</div>
                 <div class="col-4 line">
                     <img src="/img/black-line-1920.png" alt="" class="w-100">
                 </div>
@@ -93,10 +107,8 @@
                                     <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="" class="aircraft">
                                 </div>
                                 <div class="text d-flex align-items-center">本店禁止吸菸</div>
-                                
-                                    <img src="/img/smoke-v2 icon.png" alt="" class="marquee_img">
-                                
 
+                                <img src="/img/smoke-v2 icon.png" alt="" class="marquee_img">
                             </div>
                         </div>
                         <div class="swiper-slide d-flex justify-content-center align-items-center">
@@ -154,6 +166,7 @@
             </div>
         </div>
     </section>
+
     <section id="product">
         <div class="container">
             <div class="row mb85">
@@ -286,48 +299,13 @@
     </footer>
 
 
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.s1', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                dynamicBullets: true,
-            },
-        });
-
-        var swiper = new Swiper('.s2', {
-            loop: true,
-            speed: 2000,
-            pagination: {
-                el: '.swiper-pagination',
-                dynamicBullets: true,
-            },
-            autoplay: {
-                delay: 1000,
-            },
-        });
-
-        var swiper = new Swiper('.s3', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                dynamicBullets: true,
-            },
-        });
-
-
-
-    </script>
+    <script src="/index.js"></script>
 
 
 </body>
