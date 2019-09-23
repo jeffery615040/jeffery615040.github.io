@@ -9,6 +9,23 @@ body {
   position: relative;
 }
 
+.move {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 9999;
+}
+
+.move .logo {
+  height: 32vw;
+  width: 16vw;
+}
+
+.move .logo .logo-L, .move .logo .logo-R, .move .logo .logo-B {
+  opacity: 0;
+}
+
 .bg-blue {
   background-color: rgba(221, 235, 245, 0.6);
 }
@@ -344,8 +361,6 @@ footer .text {
     background-color: unset;
   }
   #message .container .announcement .calendar {
-    width: 190px;
-    height: 226px;
     margin: auto;
   }
   #product {

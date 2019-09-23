@@ -1,3 +1,18 @@
+move_end = function () {
+    console.log("結束了");
+}
+
+
+var TimelineLite = new TimelineMax();
+
+        //270  419
+        TimelineLite.add(TweenMax.to(".logo-L", 3, {transform:'translate(calc(42VW),calc(50vh - 16vw))', opacity:1}));
+        TimelineLite.add(TweenMax.to(".logo-R", 3, {transform:'translate(calc(42VW),calc(50vh - 16vw))', opacity:1}));
+        TimelineLite.add(TweenMax.to(".logo-B", 3, {transform:'translate(calc(42vw),calc(50vh - 16vw))', opacity:1}));
+
+        TimelineLite.addCallback(move_end, "+=1");
+
+
 var swiper = new Swiper('.banner', {
     loop: true,
     pagination: {
@@ -36,10 +51,7 @@ var swiper = new Swiper('.s3', {
     },
 });
 
-
 var nav_link = document.querySelectorAll(".nav-link");
-
-console.log(nav_link);
 
 for (let i = 0; i < nav_link.length; i++) {
     let English = ["Story","News","Menu","Contact","Recommend"];
@@ -52,6 +64,9 @@ for (let i = 0; i < nav_link.length; i++) {
         nav_link[i].textContent = Chinese[i];  
     } 
 }
+
+
+        
 
 
 
