@@ -361,6 +361,7 @@ footer .text {
     background-color: unset;
   }
   #message .container .announcement .calendar {
+    width: unset;
     height: 226px;
     margin: auto;
   }
