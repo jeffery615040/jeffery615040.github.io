@@ -10,6 +10,18 @@ body {
   overflow-y: hidden;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
 #move {
   height: 100vh;
   width: 100%;
