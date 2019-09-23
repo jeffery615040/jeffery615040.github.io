@@ -168,7 +168,7 @@ body{
                 .calendar{
                     margin: 30px 0 30px 30px;
                     height: 350px;
-                    width: 300px; 
+                    // width: 300px; 
                 }
             .d-sm-flex{
                 flex-direction: column;
@@ -347,7 +347,7 @@ footer{
                 background-color: unset;
                 .calendar{
                     // width: 190px;
-                    // height: 226px;
+                    height: 226px;
                     margin: auto;
                 }
             }
