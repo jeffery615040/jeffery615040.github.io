@@ -1,10 +1,12 @@
 gotop = function() {
     window.scrollTo(0,0); 
 }
+
 move_end = function () {
     body.style.overflowY = "unset";
     move.style.opacity = "0";
 }
+
 move_none = function () {
     move.style.display = "none";
 }
@@ -14,7 +16,7 @@ var TimelineLite = new TimelineMax();
 var body = document.querySelector("body");
 var move = document.querySelector("#move");
 
-        TimelineLite.addCallback(gotop,0);
+        TimelineLite.addCallback(gotop,1);
         
         TimelineLite.add(TweenMax.to(".logo-L", 2, {transform:'translate(calc(42VW),0)', opacity:1}));
 
