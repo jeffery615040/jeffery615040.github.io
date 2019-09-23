@@ -400,7 +400,27 @@ footer .text {
     display: none;
   }
   footer {
+    font-size: 13pt;
     padding: 5px 0;
+  }
+}
+
+@media (max-width: 321px) {
+  #story .row .swiper_story {
+    padding: 20px;
+    font-size: 10pt;
+  }
+  #message {
+    font-size: 10pt;
+  }
+  #product {
+    font-size: 10pt;
+  }
+  #connection {
+    font-size: 10pt;
+  }
+  #recommend {
+    font-size: 10pt;
   }
 }
 /*# sourceMappingURL=index.css.map */

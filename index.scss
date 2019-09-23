@@ -5,6 +5,7 @@ $mb-0:0px;
 $my-10:10px;
 $f-size20:20pt;
 $f-size15:15pt;
+$f-size10:10pt;
 
 *{
     box-sizing: border-box;
@@ -389,9 +390,30 @@ footer{
         }
     }
     footer{
+        font-size: 13pt;
         padding: 5px 0;
     }
-     
-    
+}
 
+@media (max-width: 321px){
+    #story{  
+        .row{
+            .swiper_story{
+                padding:20px;
+                font-size:$f-size10;
+            } 
+        }
+    }
+    #message{
+        font-size: $f-size10;
+    }
+    #product{
+        font-size: $f-size10;
+    }
+    #connection{
+        font-size: $f-size10;
+    }
+    #recommend{
+        font-size: $f-size10;
+    }
 }
