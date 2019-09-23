@@ -15,19 +15,24 @@ body{
     margin: 0;
     padding: 0;
     position: relative;
-    // overflow-y: hidden;
+    overflow-y: hidden;
 }
 
-.move{
+#move{
     height: 100vh;
     width: 100%;
     background-color: white;
     position: absolute;
     z-index: 9999;
-    .logo{
+    opacity: 1;
+    position: fixed;
+    transition: 2s;
+    top: 0;
+    .logo-s{
         height: 32vw;
         width: 16vw;
         .logo-L, .logo-R, .logo-B{
+            margin: calc(50vh - 16vw) 0 0 0;
             opacity: 0;
         }
     }

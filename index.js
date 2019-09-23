@@ -1,16 +1,26 @@
+q123 = function() {
+    window.scrollTo(0,0); 
+    console.log("1111111");
+}
 move_end = function () {
-    console.log("結束了");
+    
+    body.style.overflowY = "unset";
+    move.style.opacity = "0";
+  
 }
 
 
 var TimelineLite = new TimelineMax();
+var body = document.querySelector("body");
+var move = document.querySelector("#move");
 
-        //270  419
-        TimelineLite.add(TweenMax.to(".logo-L", 3, {transform:'translate(calc(42VW),calc(50vh - 16vw))', opacity:1}));
-        TimelineLite.add(TweenMax.to(".logo-R", 3, {transform:'translate(calc(42VW),calc(50vh - 16vw))', opacity:1}));
-        TimelineLite.add(TweenMax.to(".logo-B", 3, {transform:'translate(calc(42vw),calc(50vh - 16vw))', opacity:1}));
+        TimelineLite.addCallback(q123, "+=1");
+        TimelineLite.add(TweenMax.to(".logo-L", 2, {transform:'translate(calc(42VW),0)', opacity:1}));
+        TimelineLite.add(TweenMax.to(".logo-R", 2, {transform:'translate(calc(42VW),0)', opacity:1}));
+        TimelineLite.add(TweenMax.to(".logo-B", 2, {transform:'translate(calc(42vw),0)', opacity:1}));
+        TimelineLite.add(TweenMax.to("#move .logo", 2, {opacity:0})).addCallback(move_end,8);
 
-        TimelineLite.addCallback(move_end, "+=1");
+        
 
 
 var swiper = new Swiper('.banner', {
