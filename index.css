@@ -391,6 +391,7 @@ footer .text {
     width: 100%;
     height: 226px;
     margin: auto;
+    max-width: 325px;
   }
   #product {
     margin-top: 0;
