@@ -24,9 +24,9 @@ var move = document.querySelector("#move");
 
         TimelineLite.add(TweenMax.to(".logo-B", 1, {transform:'translate(calc(50VW - 50%),0)', opacity:1}));
 
-        TimelineLite.add(TweenMax.to("#move .logo", 1, {opacity:0})).addCallback(move_end,8);
+        TimelineLite.add(TweenMax.to("#move .logo", 1, {opacity:0})).addCallback(move_end,4);
 
-        TimelineLite.addCallback(move_none,5);
+        TimelineLite.addCallback(move_none,6);
         
 
         
