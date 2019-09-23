@@ -1,12 +1,12 @@
-q123 = function() {
+gotop = function() {
     window.scrollTo(0,0); 
-    console.log("1111111");
 }
 move_end = function () {
-    
     body.style.overflowY = "unset";
     move.style.opacity = "0";
-  
+}
+move_none = function () {
+    move.style.display = "none";
 }
 
 
@@ -14,11 +14,18 @@ var TimelineLite = new TimelineMax();
 var body = document.querySelector("body");
 var move = document.querySelector("#move");
 
-        TimelineLite.addCallback(q123, "+=1");
+        TimelineLite.addCallback(gotop,0);
+        
         TimelineLite.add(TweenMax.to(".logo-L", 2, {transform:'translate(calc(42VW),0)', opacity:1}));
+
         TimelineLite.add(TweenMax.to(".logo-R", 2, {transform:'translate(calc(42VW),0)', opacity:1}));
+
         TimelineLite.add(TweenMax.to(".logo-B", 2, {transform:'translate(calc(42vw),0)', opacity:1}));
+
         TimelineLite.add(TweenMax.to("#move .logo", 2, {opacity:0})).addCallback(move_end,8);
+
+        TimelineLite.addCallback(move_none,10);
+        
 
         
 
