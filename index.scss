@@ -300,6 +300,18 @@ footer{
 }
 
 @media (max-width: 576px){
+    #move{
+        .logo-s{
+            height: 64vw;
+            width: 32vw;
+            .logo-L, .logo-R, .logo-B{
+                margin: calc(50vh - 50%) 0 0 0;
+                opacity: 0;
+            }
+        }
+    
+    }
+
     .bg-blue{
         background-color: rgba(221, 235, 245, 0.8);
     }
