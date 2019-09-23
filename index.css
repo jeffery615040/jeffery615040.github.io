@@ -178,6 +178,7 @@ body {
 #message .container .announcement .calendar {
   margin: 30px 0 30px 30px;
   height: 350px;
+  width: 300px;
 }
 
 #message .container .announcement .d-sm-flex {
