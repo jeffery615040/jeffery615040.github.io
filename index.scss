@@ -315,7 +315,7 @@ footer{
             height: 64vw;
             width: 32vw;
             .logo-L, .logo-R, .logo-B{
-                margin: calc(50vh - 50%) 0 0 0;
+                margin-top: calc(50vh - 32vw);
                 opacity: 0;
             }
         }

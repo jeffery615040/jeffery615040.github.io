@@ -338,7 +338,7 @@ footer .text {
     width: 32vw;
   }
   #move .logo-s .logo-L, #move .logo-s .logo-R, #move .logo-s .logo-B {
-    margin: calc(50vh - 50%) 0 0 0;
+    margin-top: calc(50vh - 32vw);
     opacity: 0;
   }
   .bg-blue {
