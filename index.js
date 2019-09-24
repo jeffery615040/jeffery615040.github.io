@@ -24,11 +24,11 @@ var move = document.querySelector("#move");
 
         TimelineLite.add(TweenMax.to(".logo-B", 1, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
 
-        TimelineLite.add(TweenMax.to("#move .logo", 1, {opacity:0})).addCallback(move_end,4);
+        TimelineLite.add(TweenMax.to("#move .logo", 1, {opacity:0})).addCallback(move_end,3);
 
-        TimelineLite.addCallback(move_none,6);
+        TimelineLite.addCallback(move_none,5);
 
-        
+
 
 var swiper = new Swiper('.banner', {
     loop: true,
