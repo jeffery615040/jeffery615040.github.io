@@ -18,7 +18,7 @@ body{
 }
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
-    content:url(/img/logo-after-left.png) url(/img/logo-after-righttop.png) url(/img/logo-after-rightbottom.png);   // load images
+    content:url(/img/logo_1.png) url(//img/logo_2.png) url(/img/logo_3.png);   // load images
  }
 a{
     color:black;

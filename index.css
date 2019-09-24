@@ -16,7 +16,7 @@ body::after {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  content: url(/img/logo-after-left.png) url(/img/logo-after-righttop.png) url(/img/logo-after-rightbottom.png);
+  content: url(/img/logo_1.png) url(//img/logo_2.png) url(/img/logo_3.png);
 }
 
 a {

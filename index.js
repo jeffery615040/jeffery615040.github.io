@@ -16,13 +16,13 @@ var TimelineLite = new TimelineMax();
 var body = document.querySelector("body");
 var move = document.querySelector("#move");
 
-        TimelineLite.addCallback(gotop,1);
+      
         
         TimelineLite.add(TweenMax.to(".logo-L", 1, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
 
-        TimelineLite.add(TweenMax.to(".logo-R", 1, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
-
         TimelineLite.add(TweenMax.to(".logo-B", 1, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
+
+        TimelineLite.add(TweenMax.to(".logo-R", 1, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
 
         TimelineLite.add(TweenMax.to("#move .logo", 1, {opacity:0})).addCallback(move_end,3);
 
@@ -83,7 +83,15 @@ for (let i = 0; i < nav_link.length; i++) {
 }
 
 
-        
+window.onload = function() {
+    if(document.body.scrollTop > 0) {
+        console.log(1);
+        window.scrollTo(0, -1);
+        document.body.scrollTop = 0;
+    }
+    window.scrollTo(0, -1);
+    document.body.scrollTop = 0;
+}
 
 
 
