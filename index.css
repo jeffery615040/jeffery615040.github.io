@@ -395,6 +395,7 @@ footer .text {
   #message .container .announcement .calendar {
     height: 350px;
     margin: auto;
+    width: auto;
   }
   #product {
     margin-top: 0;
