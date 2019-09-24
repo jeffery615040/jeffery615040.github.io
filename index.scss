@@ -38,13 +38,14 @@ a:visited {
     z-index: 9999;
     opacity: 1;
     position: fixed;
-    transition: 2s;
     top: 0;
+    transition: 2s;
+    
     .logo-s{
         height: 32vw;
         width: 16vw;
         .logo-L, .logo-R, .logo-B{
-            margin: calc(50vh - 16vw) 0 0 0;
+            margin-left: calc(42vw);
             opacity: 0;
         }
     }
@@ -314,7 +315,7 @@ footer{
             height: 64vw;
             width: 32vw;
             .logo-L, .logo-R, .logo-B{
-                margin-top: calc(50vh - 32vw);
+                margin-left: 34vw;
                 opacity: 0;
             }
         }

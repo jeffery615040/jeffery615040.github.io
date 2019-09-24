@@ -18,11 +18,11 @@ var move = document.querySelector("#move");
 
         TimelineLite.addCallback(gotop,1);
         
-        TimelineLite.add(TweenMax.to(".logo-L", 1, {transform:'translate(calc(50VW - 50%),0)', opacity:1}));
+        TimelineLite.add(TweenMax.to(".logo-L", 1, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
 
-        TimelineLite.add(TweenMax.to(".logo-R", 1, {transform:'translate(calc(50VW - 50%),0)', opacity:1}));
+        TimelineLite.add(TweenMax.to(".logo-R", 1, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
 
-        TimelineLite.add(TweenMax.to(".logo-B", 1, {transform:'translate(calc(50VW - 50%),0)', opacity:1}));
+        TimelineLite.add(TweenMax.to(".logo-B", 1, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
 
         TimelineLite.add(TweenMax.to("#move .logo", 1, {opacity:0})).addCallback(move_end,4);
 
