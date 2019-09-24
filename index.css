@@ -393,10 +393,8 @@ footer .text {
     background-color: unset;
   }
   #message .container .announcement .calendar {
-    width: 300px;
-    height: 226px;
+    height: 350px;
     margin: auto;
-    max-width: 325px;
   }
   #product {
     margin-top: 0;
