@@ -15,6 +15,7 @@ body{
     padding: 0;
     position: relative;
     overflow-y: hidden;
+    
 }
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
@@ -51,6 +52,9 @@ a:visited {
         .logo-L, .logo-R, .logo-B{
             margin-left: calc(42vw);
             opacity: 0;
+        }
+        .logo-B{
+            transform-origin: bottom;
         }
     }
 

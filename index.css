@@ -59,6 +59,11 @@ a:visited {
   opacity: 0;
 }
 
+#move .logo-s .logo-B {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
 .bg-blue {
   background-color: rgba(221, 235, 245, 0.6);
 }
