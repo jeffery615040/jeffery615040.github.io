@@ -10,6 +10,15 @@ body {
   overflow-y: hidden;
 }
 
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(/img/logo-after-left.png) url(/img/logo-after-righttop.png) url(/img/logo-after-rightbottom.png) url(img4.jpg);
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -54,13 +63,10 @@ a:visited {
   background-color: rgba(221, 235, 245, 0.6);
 }
 
-.navbar {
-  display: inline-block;
-}
-
 .fixed-top {
   top: 25vh;
   right: unset;
+  display: inline-block;
 }
 
 .fixed-top .logo .logo-img {
@@ -95,27 +101,23 @@ a:visited {
 }
 
 #banner .swiper-container .img1 {
-  background-image: url("/img/banner-1920-1.png");
+  background-image: url("/img/1920-1.jpg");
 }
 
 #banner .swiper-container .img2 {
-  background-image: url("/img/banner-1920-2.png");
+  background-image: url("/img/1920-2.png");
 }
 
 #banner .swiper-container .img3 {
-  background-image: url("/img/banner-1920-3.png");
+  background-image: url("/img/1920-3.png");
 }
 
 #banner .swiper-container .img4 {
-  background-image: url("/img/banner-1920-4.png");
+  background-image: url("/img/1920-4.png");
 }
 
 #banner .swiper-container .img5 {
-  background-image: url("/img/banner-1920-5.png");
-}
-
-#banner .swiper-container .img6 {
-  background-image: url("/img/banner-1920-6.png");
+  background-image: url("/img/1920-5.png");
 }
 
 #story {
@@ -354,22 +356,19 @@ footer .text {
     height: 50vh;
   }
   #banner .swiper-container .img1 {
-    background-image: url("/img/banner-576-1.png");
+    background-image: url("/img/576-1.png");
   }
   #banner .swiper-container .img2 {
-    background-image: url("/img/banner-576-2.png");
+    background-image: url("/img/576-2.png");
   }
   #banner .swiper-container .img3 {
-    background-image: url("/img/banner-576-3.png");
+    background-image: url("/img/576-3.png");
   }
   #banner .swiper-container .img4 {
-    background-image: url("/img/banner-576-4.png");
+    background-image: url("/img/576-4.png");
   }
   #banner .swiper-container .img5 {
-    background-image: url("/img/banner-576-5.png");
-  }
-  #banner .swiper-container .img6 {
-    background-image: url("/img/banner-576-6.png");
+    background-image: url("/img/576-5.png");
   }
   #story {
     margin-top: 0;

@@ -27,10 +27,8 @@ var move = document.querySelector("#move");
         TimelineLite.add(TweenMax.to("#move .logo", 1, {opacity:0})).addCallback(move_end,4);
 
         TimelineLite.addCallback(move_none,6);
-        
 
         
-
 
 var swiper = new Swiper('.banner', {
     loop: true,
