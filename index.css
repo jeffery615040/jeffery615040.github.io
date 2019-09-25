@@ -201,7 +201,6 @@ a:visited {
 
 #message .container .marquee .swiper-container .text {
   letter-spacing: 5px;
-  font-size: 15pt;
 }
 
 #message .container .line {
@@ -216,6 +215,10 @@ a:visited {
   margin: 30px 0 30px 30px;
   height: 350px;
   width: 300px;
+}
+
+#message .container .announcement .text {
+  font-size: 16pt;
 }
 
 #message .container .announcement .d-sm-flex {
