@@ -73,14 +73,15 @@ a:visited {
 }
 
 .bg-blue{
-    background-color: rgba(221, 235, 245, 0.6);
+    
 }
 
 .fixed-top{ 
     top: 25vh;
     right: unset;
     display: inline-block;
-
+    background-color: rgba(221, 235, 245, 0.6);
+    
     .logo{
         .logo-img{
             width: 6vw;

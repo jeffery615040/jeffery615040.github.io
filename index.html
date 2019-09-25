@@ -10,13 +10,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
     <link rel="stylesheet" href="index.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148730845-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148730845-1');
+    </script>
+
+
 <body>
 
     <div id="move">
         <div class="logo-s d-flex position-relative">
-            <img src="/img/logo_L.png" alt="logo_L" class="logo-L w-100 h-100 float-left position-absolute logo">
-            <img src="/img/logo_T.png" alt="logo_top" class="logo-R w-100 h-100 float-left position-absolute logo">
-            <img src="/img/logo_B.png" alt="logo_bot" class="logo-B w-100 h-100 float-left position-absolute logo">
+            <img data-src="/img/logo_L.png" alt="logo_L"
+                class="logo-L w-100 h-100 float-left position-absolute logo lazyload">
+            <img data-src="/img/logo_T.png" alt="logo_top"
+                class="logo-R w-100 h-100 float-left position-absolute logo lazyload">
+            <img data-src="/img/logo_B.png" alt="logo_bot"
+                class="logo-B w-100 h-100 float-left position-absolute logo lazyload">
 
         </div>
     </div>
@@ -99,11 +113,11 @@
         <div class="container">
             <div class="row mb85 my10">
                 <div class="col-4 line">
-                    <img src="/img/black-line-1920.png" alt="line" class="w-100">
+                    <img data-src="/img/black-line-1920.png" alt="line" class="w-100 lazyload">
                 </div>
                 <div class="col-4 text-center d-flex align-items-center justify-content-center">顛覆消息</div>
                 <div class="col-4 line">
-                    <img src="/img/black-line-1920.png" alt="line" class="w-100">
+                    <img data-src="/img/black-line-1920.png" alt="line" class="w-100 lazyload">
                 </div>
             </div>
             <div class="row marquee d-flex d-sm-none">
@@ -112,17 +126,18 @@
                         <div class="swiper-slide d-flex justify-content-center align-items-center">
                             <div class="row d-flex justify-content-center align-items-center">
                                 <div>
-                                    <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="line" class="aircraft">
+                                    <img data-src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="line"
+                                        class="aircraft lazyload">
                                 </div>
                                 <div class="text d-flex align-items-center">本店禁止吸菸</div>
-                                <img src="/img/smoke-v2 icon.png" alt="line" class="marquee_img">
+                                <img data-src="/img/smoke-v2 icon.png" alt="line" class="marquee_img lazyload">
                             </div>
                         </div>
                         <div class="swiper-slide d-flex justify-content-center align-items-center">
                             <div class="row d-flex justify-content-center align-items-center">
                                 <div>
-                                    <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="aircraft"
-                                        class="aircraft">
+                                    <img data-src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="aircraft"
+                                        class="aircraft lazyload">
                                 </div>
                                 <div class="text d-flex align-items-center">本店低消—飲品一杯/人</div>
                             </div>
@@ -130,8 +145,8 @@
                         <div class="swiper-slide d-flex justify-content-center align-items-center">
                             <div class="row d-flex justify-content-center align-items-center">
                                 <div>
-                                    <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="aircraft"
-                                        class="aircraft">
+                                    <img data-src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="aircraft"
+                                        class="aircraft lazyload">
                                 </div>
                                 <div class="text d-flex align-items-center">中秋烤肉會—1599/人</div>
                             </div>
@@ -151,22 +166,25 @@
                 <div class="col-12 col-sm-12 col-md-6 d-none d-sm-flex justify-content-center">
                     <div class="row">
                         <div>
-                            <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="aircraft" class="aircraft"></div>
+                            <img data-src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="aircraft"
+                                class="aircraft lazyload"></div>
                         <div class="text d-flex align-items-center">本店禁止吸菸</div>
                         <div>
-                            <img src="/img/smoke-v2 icon.png" alt="stop_smoke" class="smoke-img">
+                            <img data-src="/img/smoke-v2 icon.png" alt="stop_smoke" class="smoke-img lazyload">
                         </div>
                     </div>
 
                     <div class="row">
                         <div>
-                            <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="aircraft" class="aircraft"></div>
+                            <img data-src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="aircraft"
+                                class="aircraft lazyload"></div>
                         <div class="text  d-flex align-items-center">本店低消—飲品一杯/人</div>
                     </div>
 
                     <div class="row">
                         <div>
-                            <img src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="aircraft" class="aircraft"></div>
+                            <img data-src="/img/cbc07c329340a4564dc25bf69c9a5efb.png" alt="aircraft"
+                                class="aircraft lazyload"></div>
                         <div class="text  d-flex align-items-center">中秋烤肉會—1599/人</div>
                     </div>
                 </div>
@@ -179,11 +197,11 @@
         <div class="container">
             <div class="row mb85 my10">
                 <div class="col-4 line">
-                    <img src="/img/black-line-1920.png" alt="line" class="w-100">
+                    <img data-src="/img/black-line-1920.png" alt="line" class="w-100 lazyload">
                 </div>
                 <div class="col-4 text-center d-flex align-items-center justify-content-center">顛覆產品</div>
                 <div class="col-4 line">
-                    <img src="/img/black-line-1920.png" alt="line" class="w-100">
+                    <img data-src="/img/black-line-1920.png" alt="line" class="w-100 lazyload">
                 </div>
             </div>
             <div class="row">
@@ -197,18 +215,18 @@
         <div class="container">
             <div class="row mb85 my10">
                 <div class="col-4 line">
-                    <img src="/img/black-line-1920.png" alt="line" class="w-100">
+                    <img data-src="/img/black-line-1920.png" alt="line" class="w-100 lazyload">
                 </div>
                 <div class="col-4 text-center d-flex align-items-center justify-content-center">聯絡顛覆</div>
                 <div class="col-4 line">
-                    <img src="/img/black-line-1920.png" alt="line" class="w-100">
+                    <img data-src="/img/black-line-1920.png" alt="line" class="w-100 lazyload">
                 </div>
             </div>
             <div class="row icon">
                 <div class="col-12 col-sm-4 icon-top d-sm-none d-flex justify-content-sm-start justify-content-center">
                     <a href="tel:0980668507">
                         <div class="phone justify-content-start mb-4">
-                            <img src="/img/phone icon.png" alt="phone_img" class="mr-2">
+                            <img data-src="/img/phone icon.png" alt="phone_img" class="mr-2 lazyload">
                             0980-668507
                         </div>
                     </a>
@@ -216,7 +234,7 @@
                 <div class="col-12 col-sm-4 icon-top d-flex justify-content-center p-0">
                     <a href="https://www.instagram.com/whatbar__ox/">
                         <div class="ig d-flex justify-content-start mb-4">
-                            <img src="/img/ig icon.png" alt="ig_img" class="mr-2">
+                            <img data-src="/img/ig icon.png" alt="ig_img" class="mr-2 lazyload">
                             whatbar__ox
                         </div>
                     </a>
@@ -224,14 +242,14 @@
                 <div class="col-12 col-sm-4 icon-top d-flex justify-content-center mb-4">
                     <a href="https://www.facebook.com/Mr.ox.288">
                         <div class="fb d-flex justify-content-sm-center justify-content-start">
-                            <img src="/img/fb icon.png" alt="fb_img" class="mr-2">
+                            <img data-src="/img/fb icon.png" alt="fb_img" class="mr-2 lazyload">
                             啥 ! 顛覆吧
                         </div>
                     </a>
                 </div>
                 <div class="col-12 col-sm-4 icon-top d-sm-none d-flex justify-content-center">
                     <div class="clock justify-content-start mb-4">
-                        <img src="/img/clock icon.png" alt="clock_img" class="mr-2">
+                        <img data-src="/img/clock icon.png" alt="clock_img" class="mr-2 lazyload">
                         20 : 30 ~ 02 : 00
                     </div>
                 </div>
@@ -240,7 +258,7 @@
                     <a
                         href="https://www.google.com.tw/maps/place/%E5%95%A5%EF%BC%81%E9%A1%9B%E8%A6%86%E5%90%A7%E3%80%82/@24.1573127,120.7132583,17z/data=!3m1!4b1!4m5!3m4!1s0x346918010edde031:0x95214337d5fd4d12!8m2!3d24.1573127!4d120.715447?hl=zh-TW">
                         <div class="map d-flex justify-content-start mb-4">
-                            <img src="/img/map icon.png" alt="googlemap_img" class="mr-2">
+                            <img data-src="/img/map icon.png" alt="googlemap_img" class="mr-2 lazyload">
                             台中市太平區立功288號
                         </div>
                     </a>
@@ -251,19 +269,19 @@
 
                 <div class="col p-0 d-flex justify-content-start">
                     <a href="https://www.instagram.com/whatbar__ox/">
-                        <img src="/img/ig-img.png" alt="ig_img">
+                        <img data-src="/img/ig-img.png" alt="ig_img" class="lazyload">
                     </a>
                 </div>
 
                 <div class="col p-0 d-flex justify-content-center">
                     <a href="https://www.facebook.com/Mr.ox.288">
-                        <img src="/img/fb-img.png" alt="fb_img"></a>
+                        <img data-src="/img/fb-img.png" alt="fb_img" class="lazyload"></a>
                 </div>
 
                 <div class="col p-0 mr-0 d-flex justify-content-end">
                     <a
                         href="https://www.google.com.tw/maps/place/%E5%95%A5%EF%BC%81%E9%A1%9B%E8%A6%86%E5%90%A7%E3%80%82/@24.1573127,120.7132583,17z/data=!3m1!4b1!4m5!3m4!1s0x346918010edde031:0x95214337d5fd4d12!8m2!3d24.1573127!4d120.715447?hl=zh-TW">
-                        <img src="/img/map-img-07.png" alt="googlemap_img"></a>
+                        <img data-src="/img/map-img-07.png" alt="googlemap_img" class="lazyload"></a>
                 </div>
             </div>
         </div>
@@ -342,6 +360,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/lazysizes.min.js"></script>
     <script src="/CustomEase.min.js"></script>
     <script src="/index.js"></script>
 

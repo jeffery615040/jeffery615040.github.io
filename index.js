@@ -27,7 +27,7 @@ var body = document.querySelector("body");
 var move = document.querySelector("#move");
 
 
-        T1.addCallback(go_Top,1);
+        T1.addCallback(go_Top,0.5);
         
         T1.add(TweenMax.to(".logo-L", 0.5, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
 
@@ -41,10 +41,10 @@ var move = document.querySelector("#move");
 
         T1.addLabel("spin_1", 2);
 
-        T1.add(TweenMax.to(".logo-B", 0.5, {transform:'translate(0,calc(55vh - 50%))'}),"spin_1");
+        T1.add(TweenMax.to(".logo-B", 0.4, {transform:'translate(0,calc(55vh - 50%)) scaleY(1.1)'}),"spin_1");
+        T1.add(TweenMax.to(".logo-R", 0.3, {transform:'translate(0,calc(55vh - 50%))'}),"spin_1");
 
-        T1.add(TweenMax.to(".logo-R", 0.5, {transform:'translate(0,calc(55vh - 50%))'}),"spin_1");
-
+        T1.add(TweenMax.to(".logo-B", 0.3, {transform:'translate(0,calc(55vh - 50%))'}));
 
         T1.add(TweenMax.to("#move .logo", 1, {opacity:0})).addCallback(move_End,3);
 
