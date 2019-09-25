@@ -8,6 +8,7 @@ body {
   padding: 0;
   position: relative;
   overflow-y: hidden;
+  font-family: 'cwTeXYen', sans-serif;
 }
 
 body::after {
@@ -17,6 +18,14 @@ body::after {
   overflow: hidden;
   z-index: -1;
   content: url(/img/logo_L.png), url(//img/logo_T.png), url(/img/logo_B.png);
+}
+
+@font-face {
+  font-family: 'cwTeXYen';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format("embedded-opentype"), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format("woff2"), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format("woff"), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format("truetype");
 }
 
 a {
@@ -92,6 +101,7 @@ a:visited {
 
 .fixed-top .nav-link {
   font-size: 15pt;
+  font-weight: 600;
 }
 
 #banner .swiper-container {
@@ -131,8 +141,9 @@ a:visited {
 
 #story .row .text {
   background-color: #a1b6c2;
-  padding: 150px;
+  padding: 50px 150px;
   font-size: 15pt;
+  letter-spacing: 4px;
 }
 
 #story .row .story_img {
@@ -196,6 +207,7 @@ a:visited {
 
 #message .container .marquee .swiper-container .text {
   letter-spacing: 5px;
+  font-size: 15pt;
 }
 
 #message .container .line {
@@ -322,7 +334,7 @@ a:visited {
 
 footer {
   background-color: #f3f7fa;
-  font-size: 18pt;
+  font-size: 16pt;
   padding: 50px 0;
 }
 
@@ -413,16 +425,10 @@ footer .text {
   }
   #product .container .eat {
     height: 33vh;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
     background-image: url("/img/menu-576-cake.png");
   }
   #product .container .drink {
     height: 33vh;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
     margin-bottom: 10px;
     background-image: url("/img/menu-576-drink.png");
   }

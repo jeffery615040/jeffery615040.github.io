@@ -15,11 +15,23 @@ body{
     padding: 0;
     position: relative;
     overflow-y: hidden; 
+    font-family: 'cwTeXYen', sans-serif;
 }
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
     content:url(/img/logo_L.png),url(//img/logo_T.png),url(/img/logo_B.png);   // load images
  }
+
+@font-face {
+    font-family: 'cwTeXYen';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+  }
 
 a{
     color:black;
@@ -68,6 +80,7 @@ a:visited {
     top: 25vh;
     right: unset;
     display: inline-block;
+
     .logo{
         .logo-img{
             width: 6vw;
@@ -87,6 +100,8 @@ a:visited {
     }
     .nav-link{
         font-size: 15pt;
+        font-weight: 600;
+
     }     
 }
 
@@ -122,8 +137,9 @@ a:visited {
     .row{
         .text{
             background-color: rgb(161 , 182, 194);
-            padding:150px;
+            padding:50px 150px;
             font-size: 15pt;
+            letter-spacing: 4px;
         }
         .story_img{
             background-image: url("/img/story-1920.png");
@@ -175,6 +191,7 @@ a:visited {
                     }
                     .text{
                         letter-spacing: 5px;
+                        font-size: 15pt;
                     }
                   }
             }
@@ -288,7 +305,7 @@ a:visited {
 
 footer{
     background-color: rgb(243, 247, 250);
-    font-size: 18pt;
+    font-size: 16pt;
     padding: 50px 0;
     img{
         width: 50px;
@@ -322,7 +339,6 @@ footer{
                 opacity: 0;
             }
         }
-    
     }
 
     .bg-blue{
@@ -392,12 +408,10 @@ footer{
             }
             .eat{
                 height: 33vh;
-                order: 2;
                 background-image: url("/img/menu-576-cake.png");
             }
             .drink{
                 height: 33vh;
-                order: 1;
                 margin-bottom: 10px;
                 background-image: url("/img/menu-576-drink.png");
             }
