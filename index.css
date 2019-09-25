@@ -8,6 +8,7 @@ body {
   padding: 0;
   position: relative;
   overflow-y: hidden;
+  opacity: 0;
 }
 
 body::after {
@@ -106,7 +107,7 @@ a:visited {
 }
 
 #banner .swiper-container .img1 {
-  background-image: url("/img/1920-1.jpg");
+  background-image: url("/img/1920-4.png");
 }
 
 #banner .swiper-container .img2 {
@@ -118,7 +119,7 @@ a:visited {
 }
 
 #banner .swiper-container .img4 {
-  background-image: url("/img/1920-4.png");
+  background-image: url("/img/1920-1.jpg");
 }
 
 #banner .swiper-container .img5 {
@@ -361,7 +362,7 @@ footer .text {
     height: 50vh;
   }
   #banner .swiper-container .img1 {
-    background-image: url("/img/576-1.png");
+    background-image: url("/img/576-4.png");
   }
   #banner .swiper-container .img2 {
     background-image: url("/img/576-2.png");
@@ -370,7 +371,7 @@ footer .text {
     background-image: url("/img/576-3.png");
   }
   #banner .swiper-container .img4 {
-    background-image: url("/img/576-4.png");
+    background-image: url("/img/576-1.png");
   }
   #banner .swiper-container .img5 {
     background-image: url("/img/576-5.png");
