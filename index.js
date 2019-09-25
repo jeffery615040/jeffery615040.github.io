@@ -8,12 +8,13 @@
 //     document.body.scrollTop = 0;
 // }
 
-go_Top = function() {
-    window.scrollTo(0,0); 
-}
+// go_Top = function() {
+//     window.scrollTo(0,0); 
+// }
 
 move_End = function () {
     body.style.overflowY = "unset";
+    body.style.height = "unset";
     move.style.opacity = "0";
     document.body.scrollTop = 0 ;document.documentElement.scrollTop = 0;
 }
@@ -28,7 +29,7 @@ var body = document.querySelector("body");
 var move = document.querySelector("#move");
 
 
-        T1.addCallback(go_Top,0.5);
+        // T1.addCallback(go_Top,0.5);
         
         T1.add(TweenMax.to(".logo-L", 0.5, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
 
