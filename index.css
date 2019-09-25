@@ -35,9 +35,6 @@ a {
 
 a:hover {
   text-decoration: none;
-}
-
-a:hover {
   color: black;
 }
 
@@ -264,14 +261,14 @@ a:visited {
 }
 
 #product .container .eat {
-  background-image: url("./img/menu-1920-cake-07.png");
+  background-image: url(/img/menu-1920-cake-07.png);
   background-size: cover;
   background-position: center;
   height: 50vh;
 }
 
 #product .container .drink {
-  background-image: url("./img/menu-1920-drink-07.png");
+  background-image: url(/img/menu-1920-drink-07.png);
   background-size: cover;
   background-position: center;
   height: 50vh;

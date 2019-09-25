@@ -39,10 +39,9 @@ a{
 }
 a:hover{
     text-decoration:none;
-}
-a:hover {
     color:black;
 }
+ 
 a:visited {
     color:black;
 }
@@ -236,13 +235,13 @@ a:visited {
             margin-bottom: $mb-85;
         }
             .eat{
-                background-image: url("./img/menu-1920-cake-07.png");
+                background-image: url(/img/menu-1920-cake-07.png);
                 background-size: cover;
                 background-position: center;
                 height: 50vh;
             }
             .drink{
-                background-image: url("./img/menu-1920-drink-07.png");
+                background-image: url(/img/menu-1920-drink-07.png);
                 background-size: cover;
                 background-position: center;
                 height: 50vh;
