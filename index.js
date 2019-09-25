@@ -104,6 +104,12 @@ for (let i = 0; i < nav_Link.length; i++) {
     } 
 }
 
+window.lazySizesConfig = window.lazySizesConfig || {};
+window.lazySizesConfig.requireJs = function(modules, cb){
+	window.require(modules, cb);
+};
+
+
 
 
 
