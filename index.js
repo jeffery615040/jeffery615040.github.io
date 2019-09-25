@@ -1,12 +1,12 @@
-window.onload = function() {
-    if(document.body.scrollTop > 0) {
-        console.log(1);
-        window.scrollTo(0, -1);
-        document.body.scrollTop = 0;
-    }
-    window.scrollTo(0, -1);
-    document.body.scrollTop = 0;
-}
+// window.onload = function() {
+//     if(document.body.scrollTop > 0) {
+//         console.log(1);
+//         window.scrollTo(0, -1);
+//         document.body.scrollTop = 0;
+//     }
+//     window.scrollTo(0, -1);
+//     document.body.scrollTop = 0;
+// }
 
 go_Top = function() {
     window.scrollTo(0,0); 
@@ -15,6 +15,7 @@ go_Top = function() {
 move_End = function () {
     body.style.overflowY = "unset";
     move.style.opacity = "0";
+    document.body.scrollTop = 0 ;document.documentElement.scrollTop = 0;
 }
 
 move_None = function () {
