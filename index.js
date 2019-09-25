@@ -19,38 +19,36 @@ move_End = function () {
 
 move_None = function () {
     move.style.display = "none";
-    body.style.opacity = "1";
 }
 
 
-var TimelineLite = new TimelineMax();
+var T1 = new TimelineMax();
 var body = document.querySelector("body");
 var move = document.querySelector("#move");
 
-        TimelineLite.addCallback(go_Top,1);
+
+        T1.addCallback(go_Top,1);
         
+        T1.add(TweenMax.to(".logo-L", 0.5, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
 
-        TimelineLite.add(TweenMax.to(".logo-L", 0.5, {transform:'translate(0,calc(55vh - 50%))', opacity:1}));
+        T1.add(TweenMax.to(".logo-B", 0.5, {transform:'translate(0,calc(55vh - 50%))', opacity:1}),0.8);
 
-        TimelineLite.add(TweenMax.to(".logo-B", 0.5, {transform:'translate(0,calc(55vh - 50%))', opacity:1}),0.8);
+        T1.add(TweenMax.to(".logo-R", 0.5, {transform:'translate(0,calc(55vh - 45%))', opacity:1}),1.4);
 
-        TimelineLite.add(TweenMax.to(".logo-R", 0.5, {transform:'translate(0,calc(55vh - 45%))', opacity:1}),1.4);//採到
+        T1.addLabel("spin",1.5);
+        T1.add(TweenMax.to(".logo-B", 0.5, {transform:'translate(0,calc(55vh - 50%)) scaleY(0.5)' }),"spin");
+        T1.add(TweenMax.to(".logo-R", 0.5, {transform:'translate(0,calc(55vh - 20%))'}),"spin");
 
-        TimelineLite.addLabel("spin",1.5);
+        T1.addLabel("spin_1", 2);
 
-        TimelineLite.add(TweenMax.to(".logo-B", 0.5, {transform:'translate(0,calc(55vh - 50%)) scaleY(0.5)' }),"spin");
-        TimelineLite.add(TweenMax.to(".logo-R", 0.5, {transform:'translate(0,calc(55vh - 20%))'}),"spin");
+        T1.add(TweenMax.to(".logo-B", 0.5, {transform:'translate(0,calc(55vh - 50%))'}),"spin_1");
 
-        TimelineLite.addLabel("spin_1", 2);
-
-        TimelineLite.add(TweenMax.to(".logo-B", 0.5, {transform:'translate(0,calc(55vh - 50%))'}),"spin_1");
-
-        TimelineLite.add(TweenMax.to(".logo-R", 0.5, {transform:'translate(0,calc(55vh - 50%))'}),"spin_1");
+        T1.add(TweenMax.to(".logo-R", 0.5, {transform:'translate(0,calc(55vh - 50%))'}),"spin_1");
 
 
-        TimelineLite.add(TweenMax.to("#move .logo", 1, {opacity:0})).addCallback(move_End,3);
+        T1.add(TweenMax.to("#move .logo", 1, {opacity:0})).addCallback(move_End,3);
 
-        TimelineLite.addCallback(move_None,4);
+        T1.addCallback(move_None,4);
 
 
 
@@ -62,7 +60,7 @@ var swiper = new Swiper('.banner', {
     },
 });
 
-var swiper = new Swiper('.swiper_story', {
+var swiper = new Swiper('.swiper_Story', {
     loop: true,
     speed:1500,
     pagination: {
@@ -73,7 +71,7 @@ var swiper = new Swiper('.swiper_story', {
     },
 });
 
-var swiper = new Swiper('.s2', {
+var swiper = new Swiper('.swiper_Message', {
     loop: true,
     speed: 2000,
     pagination: {
@@ -84,7 +82,7 @@ var swiper = new Swiper('.s2', {
     },
 });
 
-var swiper = new Swiper('.s3', {
+var swiper = new Swiper('.swiper_Recommend', {
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -92,17 +90,17 @@ var swiper = new Swiper('.s3', {
     },
 });
 
-var nav_link = document.querySelectorAll(".nav-link");
+var nav_Link = document.querySelectorAll(".nav-link");
 
-for (let i = 0; i < nav_link.length; i++) {
+for (let i = 0; i < nav_Link.length; i++) {
     let English = ["Story","News","Menu","Contact","Recommend"];
     let Chinese = ["顛覆故事","顛覆消息","顛覆產品","聯絡顛覆","推薦顛覆"];
     
-    nav_link[i].onmouseover = function changetext() {
-        nav_link[i].textContent = English[i];  
+    nav_Link[i].onmouseover = function change_Text() {
+        nav_Link[i].textContent = English[i];  
     } 
-    nav_link[i].onmouseout = function changetext() {
-        nav_link[i].textContent = Chinese[i];  
+    nav_Link[i].onmouseout = function change_Text() {
+        nav_Link[i].textContent = Chinese[i];  
     } 
 }
 
