@@ -71,11 +71,16 @@
         <!-- Swiper -->
         <div class="swiper-container banner">
             <div class="swiper-wrapper">
-                <div class="swiper-slide img1 bg-stage lazyload" data-sizes="auto" data-bgset="/img/576-4.png 576w, /img/1920-4.png 1920w"></div>
-                <div class="swiper-slide img2 bg-stage lazyload" data-sizes="auto" data-bgset="/img/576-2.png 576w, /img/1920-2.png 1920w"></div>
-                <div class="swiper-slide img3 bg-stage lazyload" data-sizes="auto" data-bgset="/img/576-3.png 576w, /img/1920-3.png 1920w"></div>
-                <div class="swiper-slide img4 bg-stage lazyload" data-sizes="auto" data-bgset="/img/576-1.png 576w, /img/1920-1.jpg 1920w"></div>
-                <div class="swiper-slide img5 bg-stage lazyload" data-sizes="auto" data-bgset="/img/576-5.png 576w, /img/1920-5.png 1920w"></div>
+                <div class="swiper-slide img1 lazyload" data-bgset="/img/576-4.png [(max-width: 600px)] |
+                /img/1920-4.png"></div>
+                <div class="swiper-slide img2 lazyload" data-bgset="/img/576-2.png [(max-width: 600px)] |
+                /img/1920-2.png"></div>
+                <div class="swiper-slide img3 lazyload" data-bgset="/img/576-3.png [(max-width: 600px)] |
+                /img/1920-3.png"></div>
+                <div class="swiper-slide img4 lazyload" data-bgset="/img/576-1.png [(max-width: 600px)] |
+                /img/1920-1.png"></div>
+                <div class="swiper-slide img5 lazyload" data-bgset="/img/576-5.png [(max-width: 600px)] |
+                /img/1920-5.png"></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination banner_pag"></div>
@@ -92,7 +97,7 @@
 
                     地點部分因為不喜歡市區的匆促吵雜，所以選擇隱身在較寧靜的大樓住宅區。
                 </div>
-                <div class="col-sm-12 col-md-6 px-0 story_img bg-stage lazyload" data-bgset="/img/story-1920.png"></div>
+                <div class="col-sm-12 col-md-6 px-0 story_img lazyload" data-bgset="/img/story-1920.png"></div>
             </div>
         </div>
 
@@ -106,7 +111,7 @@
                         <p></p>
                     </div>
                 </div>
-                <div class="swiper-slide story_img bg-stage lazyload" data-bgset="/img/story-576.png"></div>
+                <div class="swiper-slide story_img lazyload" data-bgset="/img/story-576.png"></div>
             </div>
         </div>
 
@@ -207,13 +212,12 @@
             </div>
             <div class="row">
 
-                <div class="col-12 col-sm-12 col-md-6 px-0 drink bg-stage lazyload" data-sizes="auto" data-bgset="/img/menu-576-drink.png 576w, /img/menu-1920-drink-07.png 1920w">
-                </div>
+                <div class="col-12 col-sm-12 col-md-6 px-0 drink lazyload" data-bgset="/img/menu-576-drink.png [(max-width: 600px)] |
+                /img/menu-1920-drink-07.png"></div>
                 
-                <div class="col-12 col-sm-12 col-md-6 px-0 eat bg-stage lazyload"
-                data-sizes="auto" data-bgset="/img/menu-576-cake.png 576w, /img/menu-1920-cake-07.png 1920w">
-                </div>
-
+                <div class="col-12 col-sm-12 col-md-6 px-0 eat lazyload" data-bgset="/img/menu-576-cake.png [(max-width: 600px)] |
+                /img/menu-1920-cake-07.png"></div>
+                
             </div>
         </div>
     </section>
@@ -453,8 +457,11 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    
     <script src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/lazysizes.min.js"></script>
+    
+
     <script src="/CustomEase.min.js"></script>
     <script src="/index.js"></script>
 

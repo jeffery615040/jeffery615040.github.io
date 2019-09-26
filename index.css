@@ -109,26 +109,6 @@ a:visited {
   background-position: center;
 }
 
-#banner .swiper-container .img1 {
-  background-image: url("/img/1920-4.png");
-}
-
-#banner .swiper-container .img2 {
-  background-image: url("/img/1920-2.png");
-}
-
-#banner .swiper-container .img3 {
-  background-image: url("/img/1920-3.png");
-}
-
-#banner .swiper-container .img4 {
-  background-image: url("/img/1920-1.jpg");
-}
-
-#banner .swiper-container .img5 {
-  background-image: url("/img/1920-5.png");
-}
-
 #story {
   margin-top: 135px;
 }
