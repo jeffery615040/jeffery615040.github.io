@@ -1,22 +1,7 @@
-// go_Top = function() {
-//     window.scrollTo(0,0); 
-// }
-
-
-
-
-// move_End = function () {
-//     body.style.overflowY = "unset";
-//     body.style.height = "unset";
-//     move.style.opacity = "0";
-//     document.body.scrollTop = 0 ;document.documentElement.scrollTop = 0;
-// }
 
 move_None = function () {
     move.style.display = "none";
-    console.log("123");
 }
-
 
 var T1 = new TimelineMax();
 var body = document.querySelector("body");
@@ -29,8 +14,6 @@ window.setTimeout(
         move.style.opacity = "0";
         document.body.scrollTop = 0 ;document.documentElement.scrollTop = 0;
     }, 3000)
-
-// T1.addCallback(go_Top,0.5);
 
 T1.add(TweenMax.to(".logo-L", 0.5, { transform: 'translate(0,calc(55vh - 50%))', opacity: 1 }));
 
@@ -49,7 +32,7 @@ T1.add(TweenMax.to(".logo-R", 0.3, { transform: 'translate(0,calc(55vh - 50%))' 
 
 T1.add(TweenMax.to(".logo-B", 0.3, { transform: 'translate(0,calc(55vh - 50%))' }));
 
-T1.add(TweenMax.to("#move .logo", 1, { opacity: 0 }));
+T1.add(TweenMax.to("#move .logo", 1, { opacity: 0}));
 
 T1.addCallback(move_None, 4);
 
@@ -107,6 +90,16 @@ for (let i = 0; i < nav_Link.length; i++) {
     }
 }
 
+// tell the embed parent frame the height of the content
+if (window.parent && window.parent.parent){
+  window.parent.parent.postMessage(["resultsFrame", {
+    height: document.body.getBoundingClientRect().height,
+    slug: "bfqqnosp"
+  }], "*")
+}
+
+// always overwrite window.name, in case users try to set it manually
+window.name = "result"
 
 
 

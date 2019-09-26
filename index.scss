@@ -224,18 +224,16 @@ a:visited {
         .mb85{
             margin-bottom: $mb-85;
         }
-            .eat{
-                background-image: url(/img/menu-1920-cake-07.png);
-                background-size: cover;
-                background-position: center;
-                height: 50vh;
-            }
             .drink{
-                background-image: url(/img/menu-1920-drink-07.png);
                 background-size: cover;
                 background-position: center;
                 height: 50vh;
             }
+            .eat{
+                background-size: cover;
+                background-position: center;
+                height: 50vh;
+            }        
     }
 }
 #connection{
@@ -263,7 +261,7 @@ a:visited {
         }
         .link-img{
             img{
-                height: 580px;
+                height: 470px;
                 width: 300px;
             }
         }
@@ -383,14 +381,12 @@ footer{
             .my10{
                 margin: $my-10 0;
             }
-            .eat{
-                height: 33vh;
-                background-image: url("/img/menu-576-cake.png");
-            }
             .drink{
-                height: 33vh;
-                margin-bottom: 10px;
-                background-image: url("/img/menu-576-drink.png");
+                height: 50vh;
+                margin-bottom: 10px; 
+            }
+            .eat{
+                height: 50vh;
             }
         }
     }
