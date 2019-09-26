@@ -7,16 +7,8 @@ $f-size20:20pt;
 $f-size15:15pt;
 $f-size10:10pt;
 
-@font-face {
-    font-family: 'cwTeXYen';
-    font-style: normal;
-    font-weight: 500;
-    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
-    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
-         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
-         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
-         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
-}
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
 *{
     box-sizing: border-box;
 }
