@@ -16,27 +16,17 @@ window.setTimeout(
     }, 3000)
 
 T1.add(TweenMax.to(".logo-L", 0.5, { transform: 'translate(0,calc(55vh - 50%))', opacity: 1 }));
-
 T1.add(TweenMax.to(".logo-B", 0.5, { transform: 'translate(0,calc(55vh - 50%))', opacity: 1 }), 0.8);
-
 T1.add(TweenMax.to(".logo-R", 0.5, { transform: 'translate(0,calc(55vh - 45%))', opacity: 1 }), 1.4);
-
 T1.addLabel("spin", 1.5);
 T1.add(TweenMax.to(".logo-B", 0.5, { transform: 'translate(0,calc(55vh - 50%)) scaleY(0.5)' }), "spin");
 T1.add(TweenMax.to(".logo-R", 0.5, { transform: 'translate(0,calc(55vh - 20%))' }), "spin");
-
 T1.addLabel("spin_1", 2);
-
 T1.add(TweenMax.to(".logo-B", 0.4, { transform: 'translate(0,calc(55vh - 50%)) scaleY(1.1)' }), "spin_1");
 T1.add(TweenMax.to(".logo-R", 0.3, { transform: 'translate(0,calc(55vh - 50%))' }), "spin_1");
-
 T1.add(TweenMax.to(".logo-B", 0.3, { transform: 'translate(0,calc(55vh - 50%))' }));
-
 T1.add(TweenMax.to("#move .logo", 1, { opacity: 0}));
-
 T1.addCallback(move_None, 4);
-
-
 
 var swiper = new Swiper('.banner', {
     loop: true,
@@ -89,18 +79,6 @@ for (let i = 0; i < nav_Link.length; i++) {
         nav_Link[i].textContent = Chinese[i];
     }
 }
-
-// tell the embed parent frame the height of the content
-if (window.parent && window.parent.parent){
-  window.parent.parent.postMessage(["resultsFrame", {
-    height: document.body.getBoundingClientRect().height,
-    slug: "bfqqnosp"
-  }], "*")
-}
-
-// always overwrite window.name, in case users try to set it manually
-window.name = "result"
-
 
 
 
