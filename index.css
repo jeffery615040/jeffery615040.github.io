@@ -141,7 +141,6 @@ a:visited {
 }
 
 #story .row .story_img {
-  background-image: url("/img/story-1920.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -160,7 +159,6 @@ a:visited {
 }
 
 #story .swiper-container .story_img {
-  background-image: url("/img/story-576.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -429,11 +427,14 @@ footer .text {
     margin-top: 0;
     font-size: 15pt;
   }
-  #connection .container .mb85 {
-    margin-bottom: 0px;
-  }
   #connection .container .my10 {
     margin: 10px 0;
+  }
+  #connection .container .icon {
+    font-size: 15pt;
+  }
+  #connection .container .icon .icon-top .phone, #connection .container .icon .icon-top .ig, #connection .container .icon .icon-top .fb, #connection .container .icon .icon-top .clock, #connection .container .icon .icon-top .map {
+    padding: 20px 0 20px 10px;
   }
   #connection .container .dnone {
     display: none;
