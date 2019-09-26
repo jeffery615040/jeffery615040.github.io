@@ -89,21 +89,6 @@ a:visited {
             background-size: cover;
             background-position: center;
         }
-        .img1{
-            background-image: url("/img/1920-4.jpg");
-        } 
-        .img2{
-            background-image: url("/img/1920-2.jpg");
-        } 
-        .img3{
-            background-image: url("/img/1920-3.jpg");
-        } 
-        .img4{
-            background-image: url("/img/1920-1.jpg");
-        } 
-        .img5{
-            background-image: url("/img/1920-5.jpg");
-        } 
     }
 }
 #story{
@@ -215,13 +200,11 @@ a:visited {
                 background-size: cover;
                 background-position: center;
                 height: 35vh;
-                background-image: url("/img/menu-1920-drink-07.jpg");
             }
             .eat{
                 background-size: cover;
                 background-position: center;
                 height: 35vh;
-                background-image: url("/img/menu-1920-cake-07.jpg");
             }        
     }
 }
@@ -313,21 +296,6 @@ footer{
         .swiper-container{
             width: 100%;
             height: 50vh;
-            .img1{
-                background-image: url("/img/576-4.jpg");
-            } 
-            .img2{
-                background-image: url("/img/576-2.jpg");
-            } 
-            .img3{
-                background-image: url("/img/576-3.jpg");
-            } 
-            .img4{
-                background-image: url("/img/576-1.jpg");
-            } 
-            .img5{
-                background-image: url("/img/576-5.jpg");
-            } 
         }
     }
     #story{
@@ -373,11 +341,9 @@ footer{
             .drink{
                 height: 50vh;
                 margin-bottom: 10px; 
-                background-image: url("/img/menu-576-drink.jpg");
             }
             .eat{
                 height: 50vh;
-                background-image: url("/img/menu-576-cake.jpg");
 
             }
         }
