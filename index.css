@@ -93,6 +93,26 @@ a:visited {
   background-position: center;
 }
 
+#banner .swiper-container .img1 {
+  background-image: url("/img/1920-4.jpg");
+}
+
+#banner .swiper-container .img2 {
+  background-image: url("/img/1920-2.jpg");
+}
+
+#banner .swiper-container .img3 {
+  background-image: url("/img/1920-3.jpg");
+}
+
+#banner .swiper-container .img4 {
+  background-image: url("/img/1920-1.jpg");
+}
+
+#banner .swiper-container .img5 {
+  background-image: url("/img/1920-5.jpg");
+}
+
 #story {
   margin-top: 135px;
 }
@@ -231,12 +251,14 @@ a:visited {
   background-size: cover;
   background-position: center;
   height: 35vh;
+  background-image: url("/img/menu-1920-drink-07.jpg");
 }
 
 #product .container .eat {
   background-size: cover;
   background-position: center;
   height: 35vh;
+  background-image: url("/img/menu-1920-cake-07.jpg");
 }
 
 #connection {
@@ -331,6 +353,21 @@ footer .text {
     width: 100%;
     height: 50vh;
   }
+  #banner .swiper-container .img1 {
+    background-image: url("/img/576-4.jpg");
+  }
+  #banner .swiper-container .img2 {
+    background-image: url("/img/576-2.jpg");
+  }
+  #banner .swiper-container .img3 {
+    background-image: url("/img/576-3.jpg");
+  }
+  #banner .swiper-container .img4 {
+    background-image: url("/img/576-1.jpg");
+  }
+  #banner .swiper-container .img5 {
+    background-image: url("/img/576-5.jpg");
+  }
   #story {
     margin-top: 0;
   }
@@ -370,9 +407,11 @@ footer .text {
   #product .container .drink {
     height: 50vh;
     margin-bottom: 10px;
+    background-image: url("/img/menu-576-drink.jpg");
   }
   #product .container .eat {
     height: 50vh;
+    background-image: url("/img/menu-576-cake.jpg");
   }
   #connection {
     margin-top: 0;
