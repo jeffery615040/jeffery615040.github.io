@@ -7,6 +7,16 @@ $f-size20:20pt;
 $f-size15:15pt;
 $f-size10:10pt;
 
+@font-face {
+    font-family: 'cwTeXYen';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+}
 *{
     box-sizing: border-box;
 }
@@ -22,18 +32,6 @@ body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
     content:url(/img/logo_L.png),url(//img/logo_T.png),url(/img/logo_B.png);   // load images
  }
-
-@font-face {
-    font-family: 'cwTeXYen';
-    font-style: normal;
-    font-weight: 500;
-    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
-    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
-         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
-         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
-         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
-  }
-
 a{
     color:black;
     text-decoration:none;
@@ -42,11 +40,9 @@ a:hover{
     text-decoration:none;
     color:black;
 }
- 
 a:visited {
     color:black;
 }
-
 #move{
     height: 100vh;
     width: 100%;
@@ -68,15 +64,12 @@ a:visited {
             transform-origin: bottom;
         }
     }
-
 }
-
-.fixed-top{ 
+.navbar{ 
     top: 25vh;
     right: unset;
     display: inline-block;
     background-color: rgba(221, 235, 245, 0.6);
-
     .logo{
         .logo-img{
             width: 6vw;
@@ -97,10 +90,8 @@ a:visited {
     .nav-link{
         font-size: 15pt;
         font-weight: 600;
-
     }     
 }
-
 #banner{
     .swiper-container{
         width: 100%;
@@ -127,7 +118,6 @@ a:visited {
         }
     }
 }
- 
 #story{
     margin-top: $mt-135;
     .row{
@@ -163,7 +153,6 @@ a:visited {
         }
     }
 }
-
 #message{
         margin-top: $mt-135;
         font-size: $f-size20;
@@ -198,7 +187,7 @@ a:visited {
                 .calendar{
                     margin: 30px 0 30px 30px;
                     height: 350px;
-                    width: 300px; 
+                    width: 380px; 
                 }
                 .text{
                     font-size: 16pt;
@@ -228,7 +217,6 @@ a:visited {
             }
         }
 }
-
 #product{
     margin-top: $mt-135;
     font-size: $f-size20;
@@ -250,7 +238,6 @@ a:visited {
             }
     }
 }
-
 #connection{
     margin-top: $mt-135;
     font-size: $f-size20;
@@ -282,7 +269,6 @@ a:visited {
         }
     }  
 }
-
 #recommend{
     margin-top: $mt-135;
     font-size: $f-size20;
@@ -300,7 +286,6 @@ a:visited {
         height: 100%;
     }
 }
-
 footer{
     background-color: rgb(243, 247, 250);
     font-size: 16pt;
@@ -313,9 +298,6 @@ footer{
         line-height: 50px;   
     }
 }
-
-
-
 @media (max-width: 1200px){
     .fixed-top{
         .logo-img{
@@ -326,7 +308,6 @@ footer{
         }
     }
 }
-
 @media (max-width: 576px){
     #move{
         .logo-s{
@@ -338,7 +319,6 @@ footer{
             }
         }
     }
-
     .bg-blue{
         background-color: rgba(221, 235, 245, 0.8);
     }
@@ -371,7 +351,6 @@ footer{
                 padding:50px;
                 font-size:12pt;
             }
-            
         }
     }
     #message{
@@ -450,7 +429,6 @@ footer{
         padding: 5px 0;
     }
 }
-
 @media (max-width: 321px){
     #story{  
         .row{

@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'cwTeXYen';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format("embedded-opentype"), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format("woff2"), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format("woff"), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format("truetype");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,8 +15,9 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
   font-family: 'cwTeXYen', sans-serif;
+  height: 100vh;
 }
 
 body::after {
@@ -18,14 +27,6 @@ body::after {
   overflow: hidden;
   z-index: -1;
   content: url(/img/logo_L.png), url(//img/logo_T.png), url(/img/logo_B.png);
-}
-
-@font-face {
-  font-family: 'cwTeXYen';
-  font-style: normal;
-  font-weight: 500;
-  src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
-  src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format("embedded-opentype"), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format("woff2"), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format("woff"), url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format("truetype");
 }
 
 a {
@@ -46,7 +47,6 @@ a:visited {
   height: 100vh;
   width: 100%;
   background-color: white;
-  position: absolute;
   z-index: 9999;
   opacity: 1;
   position: fixed;
@@ -70,30 +70,30 @@ a:visited {
           transform-origin: bottom;
 }
 
-.fixed-top {
+.navbar {
   top: 25vh;
   right: unset;
   display: inline-block;
   background-color: rgba(221, 235, 245, 0.6);
 }
 
-.fixed-top .logo .logo-img {
+.navbar .logo .logo-img {
   width: 6vw;
   min-width: 80px;
 }
 
-.fixed-top .navbar-toggler .navbar-toggler-icon {
+.navbar .navbar-toggler .navbar-toggler-icon {
   background-image: url("/img/logo.png");
   width: 6vw;
   height: 16vw;
 }
 
-.fixed-top .navbar-nav {
+.navbar .navbar-nav {
   display: inline-block;
   margin: 10px auto;
 }
 
-.fixed-top .nav-link {
+.navbar .nav-link {
   font-size: 15pt;
   font-weight: 600;
 }
@@ -214,7 +214,7 @@ a:visited {
 #message .container .announcement .calendar {
   margin: 30px 0 30px 30px;
   height: 350px;
-  width: 300px;
+  width: 380px;
 }
 
 #message .container .announcement .text {
