@@ -196,16 +196,20 @@ a:visited {
         .mb85{
             margin-bottom: $mb-85;
         }
-            .drink{
+        .drink{
+            .drink-img{
                 background-size: cover;
                 background-position: center;
-                height: 35vh;
+                height: 50vh;
             }
-            .eat{
+        }
+        .eat{
+            .eat-img{
                 background-size: cover;
                 background-position: center;
-                height: 35vh;
-            }        
+                height: 50vh;
+            }
+        }        
     }
 }
 #connection{
@@ -339,12 +343,15 @@ footer{
                 margin: $my-10 0;
             }
             .drink{
-                height: 50vh;
                 margin-bottom: 10px; 
+                .drink-img{
+                    height: 50vh;
+                }
             }
             .eat{
-                height: 50vh;
-
+                .eat-img{
+                    height: 50vh;
+                }
             }
         }
     }

@@ -227,16 +227,16 @@ a:visited {
   margin-bottom: 85px;
 }
 
-#product .container .drink {
+#product .container .drink .drink-img {
   background-size: cover;
   background-position: center;
-  height: 35vh;
+  height: 50vh;
 }
 
-#product .container .eat {
+#product .container .eat .eat-img {
   background-size: cover;
   background-position: center;
-  height: 35vh;
+  height: 50vh;
 }
 
 #connection {
@@ -368,10 +368,12 @@ footer .text {
     margin: 10px 0;
   }
   #product .container .drink {
-    height: 50vh;
     margin-bottom: 10px;
   }
-  #product .container .eat {
+  #product .container .drink .drink-img {
+    height: 50vh;
+  }
+  #product .container .eat .eat-img {
     height: 50vh;
   }
   #connection {
